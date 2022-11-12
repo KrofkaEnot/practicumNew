@@ -8,4 +8,4 @@ npm run build
 node ./server.js
 
 Ссылка на Netlify:
-
+https://effulgent-haupia-fa7924.netlify.app/
