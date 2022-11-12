@@ -2,7 +2,7 @@ import styleButtons from './ui/button/buttons.scss'
 import styleForm from './pages/pages.scss'
 import button from './ui/button/buttons.hbs';
 import Handlebars from '../node_modules/handlebars/dist/handlebars.runtime';
-import { inputsWithSpecificAttributes, homeAttr } from "./globName"
+import { inputsWithSpecificAttributes } from "./globName"
 //______________GLOBAL fun__________________\\
 window.renderPage = renderPage;
 
