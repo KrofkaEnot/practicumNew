@@ -1,0 +1,71 @@
+:root {
+    --button-text-shadow-1: rgba(255, 255, 255, .2);
+    --button-text-shadow-2: rgba(0, 0, 0, .8);
+    --button-background-1: rgb(21, 149, 161);
+    --button-background-2: rgba(255, 255, 255, .2);
+    --button-background-3: rgba(0, 0, 0, 0);
+
+    --button-box-shadow-1: rgba(0, 0, 0, .6);
+    --button-box-shadow-2: rgba(252, 255, 255, .7);
+    --button-box-shadow-3: rgba(0, 0, 0, .8);
+
+    --button-color: rgb(0, 46, 50);
+
+    --button-hover-background-1: rgb(9, 214, 233);
+    --button-hover-background-2: rgba(255, 255, 255, .2);
+    --button-hover-background-3: rgba(0, 0, 0, 0);
+
+    --button-hover-shadow: rgba(9, 214, 233, 0.37);
+
+    --button-active-background: rgba(255, 112, 0, 0.83);
+    --button-active-shadow: rgba(255, 112, 0, 0.83);
+
+    --font-size-button: 1.5vw;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+$buttonTextShadow: 0 1px var(--button-text-shadow-1), 0 -1px var(--button-text-shadow-2);
+$buttonBackground: var(--button-background-1) radial-gradient(150% 100% at 50% 5px, var(--button-background-2), var(--button-background-3));
+$buttonBoxShadow: inset var(--button-box-shadow-1) 0 -2px 5px, inset var(--button-box-shadow-2) 0 2px 5px, var(--button-box-shadow-3) 0 2px 5px -1px;
+$buttonColor: var(--button-color);
+
+$buttonHoverBackground: var(--button-hover-background-1) radial-gradient(150% 100% at 50% 5px, var(--button-hover-background-2), var(--button-hover-background-3));
+$buttonHoverShadow: 0px 0px 30px 20px var(--button-hover-shadow);
+
+$buttonActiveBackground: var(--button-active-background);
+$buttonActiveShadow: 0px 0px 52px 7px var(--button-active-shadow);
+
+.button {
+    width: 7em;
+    display: inline-block;
+    line-height: 2em;
+    font-size: var(--font-size-button);
+    text-shadow: $buttonTextShadow;
+    outline: none;
+    border: none;
+    border-radius: 0.5em;
+    background: $buttonBackground;
+    -webkit-box-shadow: $buttonBoxShadow;
+    -moz-box-shadow: $buttonBoxShadow;
+    box-shadow: $buttonBoxShadow;
+    color: $buttonColor;
+    user-select: none;
+
+    &:hover {
+        background: $buttonHoverBackground;
+        -webkit-box-shadow: $buttonHoverShadow;
+        -moz-box-shadow: $buttonHoverShadow;
+        box-shadow: $buttonHoverShadow;
+    }
+
+    &:active {
+        background: $buttonActiveBackground;
+        -webkit-box-shadow: $buttonActiveShadow;
+        -moz-box-shadow: $buttonActiveShadow;
+        box-shadow: $buttonActiveShadow;
+    }
+}
