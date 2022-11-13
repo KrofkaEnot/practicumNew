@@ -1,0 +1,20 @@
+<div class="title">
+    <h1>Профиль</h1>
+</div>
+<hr>
+{{>button}}
+<hr>
+<div class="form">
+    <form name="profile" method="" action="">
+        <label>{{avatar}}<input type="file" value="" name="avatar"></label>
+        <label><input placeholder="{{first_name}}" type="text" value="" name="first_name"></label>
+        <label><input placeholder="{{second_name}}" type="text" value="" name="second_name"></label>
+        <label><input placeholder="{{display_name}}" type="text" value="" name="display_name"></label>
+        <label><input placeholder="{{login}}" type="text" value="" name="login"></label>
+        <label><input placeholder="{{email}}" type="email" value="" name="email"></label>
+        <label><input placeholder="{{phone}}" type="tel" value="" name="phone"></label>
+        <label><input placeholder="{{oldPassword}}" type="password" value="" name="oldPassword"></label>
+        <label><input placeholder="{{newPassword}}" type="password" value="" name="newPassword"></label>
+        <input type="submit" class="button" value="Изменить">
+    </form>
+</div>

@@ -1,0 +1,36 @@
+<div class="title">
+    <h1>Главная</h1>
+</div>
+<hr>
+{{>button}}
+<hr>
+<div class="chat">
+    <div class="right_head"></div>
+
+    <div class="left">
+        <ul>
+            <li>
+                <div>Комната 1</div>
+            </li>
+            <li>
+                <div>Комната 2</div>
+            </li>
+            <li>
+                <div>Комната 3</div>
+            </li>
+            <li>
+                <div>Комната 4</div>
+            </li>
+            <li>
+                <div>Комната 5</div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="right_footer">
+        <form name="chat" method="" action="">
+            <input class="enter_message" placeholder="{{message}}" type="message" value="" name="message">
+            <input type="submit" class="button send_message" value="Отправить">
+        </form>
+    </div>
+</div>
